@@ -44,10 +44,10 @@ class myrubyapp {
 	  require => User['apps'],
 	}
 
-	rbenv::compile { 'apps/1.9.3-p194':
+	rbenv::compile { 'apps/2.0.0-p0':
 	  user => 'apps',
 	  home => '/opt/apps',
-	  ruby => '1.9.3-p194',
+	  ruby => '2.0.0-p0',
 	  global => true,
 	  require => Rbenv::Install['apps'],
 	}
